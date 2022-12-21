@@ -15,10 +15,13 @@ include_once 'conexao.php';
     <title>Pagina de Entrada</title>
 </head>
 <body>
-   
-            <h2 style='color:#fa8cd9'>Seja Bem Vindo(a)!</h2>
+    <div class="box">
+        <div class="forme">
+            <h2 style='color:#fa8cd9'>Seja Bem Vindo(a), <?php echo $_SESSION['nome'];?>!</h2>
+            
             <a href="Sair.php" style='color:#fa8cd9'>Sair</a>
-
-           
+            
+        </div>
+    </div>      
 </body>
 </html>
