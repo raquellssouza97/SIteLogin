@@ -2,7 +2,12 @@
 session_start();
 ob_start();
 include_once 'conexao.php';
+if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome'])) ){
+    $_SESSION['msg']="<p style='color:#fa8cd9' name=ErrAcesso>Erro: necessario realizar Login</p>";
+                        
+    header("Location: index.php");
 
+};
 ?>
 
 <!DOCTYPE html>

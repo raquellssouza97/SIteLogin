@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
 
     $host = "localhost/site/";
     $user = "root";
