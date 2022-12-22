@@ -72,9 +72,9 @@ include_once 'conexao.php';
                     </div>
 
                     <div class="links">
-                        <br><br>  <a href="#">Esqueceu a senha?</a>
+                        <br><br>  <a href="http://localhost/site/esqueceuSenha.php">Esqueceu a senha?</a>
 
-                        <a href="#">Inscreva-se</a>
+                        <a href="http://localhost/site/cadastra.php">Inscreva-se</a>
                     </div>
                 
 
