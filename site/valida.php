@@ -4,7 +4,7 @@ include_once("conexao.php");
 $SendLogin = filter_input(INPUT_POST, 'SendLogin', FILTER_SANITIZE_STRING);
 if($SendLogin){
 	$usuario = filter_input(INPUT_POST, 'Usuario', FILTER_SANITIZE_STRING);
-	$Senha = filter_input(INPUT_POST, 'Senha', FILTER_SANITIZE_STRING);
+	$senha = filter_input(INPUT_POST, 'Senha', FILTER_SANITIZE_STRING);
 	//echo "$usuario - $senha";
 	if((!empty($Usuario)) AND (!empty($Senha))){
 		//Gerar a senha criptografa
