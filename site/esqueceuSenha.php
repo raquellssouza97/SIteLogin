@@ -9,8 +9,8 @@
     </header>
     <body>
         <div >
-            <div class="box">
-                <form class=forme>
+            <div >
+                <form >
                     <h2 style='color:#fa8cd9'>Recuperação de Senha</h2>
                     <form>
                     <div class="inputBox">
@@ -34,7 +34,7 @@
                         <span style='color:#fa8cd9'>Confirma Nova Senha:</span><i></i>
                     </div>
 
-                <input type="submit" value="Cadastrar" name="Cadastra" class="c">
+                <input type="submit" value="Recuperar" name="Recuperar" class="c">
                 </form>
                 
             </div>

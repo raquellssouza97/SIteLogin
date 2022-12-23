@@ -28,7 +28,7 @@ include_once 'conexao.php';
                         
                             if(!empty($dados['SendLogin'])){
                         //var_dump($dados);
-                        $query_Usuario= "SELECT id, nome, Usuario, Senha 
+                        $query_Usuario= "SELECT id, nome, Usuario, Email, Senha 
                             FROM usuario 
                             WHERE Usuario= :Usuario
                             LIMIT 1 ";
@@ -67,7 +67,8 @@ include_once 'conexao.php';
                         <span>Usuário</span> <i></i>
                     </div>
 
-                    <div class="inputBox"><input type="Password" name="Senha" value="<?php if(isset($dados['Senha'])){ echo $dados['Senha']; }?>"required>
+                    <div class="inputBox">
+                        <input type="Password" name="Senha" value="<?php if(isset($dados['Senha'])){ echo $dados['Senha']; }?>"required>
                         <span>Senha</span> <i></i>
                     </div>
 
