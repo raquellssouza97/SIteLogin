@@ -12,6 +12,7 @@
     $conn=  new PDO("mysql: host=$host;port=$port;dbname=".$dbname, $user,$pass);
     //echo " conexão com banco de dados realizados com sucesso";
     //conexao sem a porta
+   // $conn= mysqli_connect($servidor,$Usuario,$Senha,$senha,$dbname);
    // $conn=  new PDO("mysql: host=$host;dbname=".$dbname, $user,$pass);
     //echo " conexão com banco de dados realizados com sucesso";
     }catch(PDOException $err){
