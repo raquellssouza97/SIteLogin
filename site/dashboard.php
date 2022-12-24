@@ -23,7 +23,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome'])) ){
     <div class="box">
         <div class="forme">
             <h2 style='color:#fa8cd9'>Seja Bem Vindo(a), <?php echo $_SESSION['nome'];?>!</h2>
-            
+            <a href="Sair.php" style='color:#fa8cd9'>Sair</a>
             <a href="Sair.php" style='color:#fa8cd9'>Sair</a>
             
         </div>

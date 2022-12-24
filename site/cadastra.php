@@ -38,10 +38,12 @@ include_once 'conexao.php';
             }
 
             if (!$empty_input) {
-                $query_Usuario = "INSERT INTO Usuario (nome, Email) VALUES (:nome, :Email) ";
+                $query_Usuario = "INSERT INTO Usuario (nome,Usuario, Email, Senha) VALUES (:nome,:Usuario, :Email,:Senha) ";
                 $cad_Usuario = $conn->prepare($query_Usuario);
                 $cad_Usuario->bindParam(':nome', $dados['nome'], PDO::PARAM_STR);
+                $cad_Usuario->bindParam(':Usuario', $dados['Usuario'], PDO::PARAM_STR);
                 $cad_Usuario->bindParam(':Email', $dados['Email'], PDO::PARAM_STR);
+                $cad_Usuario->bindParam(':Senha', $dados['Senha'], PDO::PARAM_STR);
                 $cad_Usuario->execute();
                 if ($cad_Usuario->rowCount()) {
                     echo "<p style='color:#fa8cd9'>Usuário cadastrado com sucesso!</p>";
